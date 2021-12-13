@@ -1,5 +1,8 @@
+const dotenv = require("dotenv");
 const express = require("express");
 
+dotenv.config();
+// intializing the app
 const app = express();
 
 let content = "server page";
@@ -11,5 +14,5 @@ app.get("/", (req, res) => {
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, (req, res) => {
-  res.json(`server is killing and is alive at ${PORT}`);
+  console.log(`server is killing and is alive at ${PORT}`);
 });
