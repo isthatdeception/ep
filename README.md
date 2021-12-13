@@ -1,3 +1,3 @@
 # ep
 
-ep is a test project 
+ep is a test project.
