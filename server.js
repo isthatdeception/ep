@@ -5,7 +5,7 @@ dotenv.config();
 // intializing the app
 const app = express();
 
-let content = "server page";
+let content = "server page at the best";
 
 app.get("/", (req, res) => {
   res.send(`<h1>{content}</h1>`);
